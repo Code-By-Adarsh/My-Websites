@@ -200,22 +200,4 @@ E-mail : adarshmishra70931@gmail.com</pre>
             </div>
          </footer>
 </body>
-<script>
-        let url='https://script.google.com/macros/s/AKfycbxTUP7uXKOoLIt6MfSAHvtlISnx7hqRUjM8TQ_s3OVes0_kbo2zTDUz_qYjZfstXiDR/exec';
-        let form=document.querySelector('#form');
-        form.addEventListener('submit',(e)=>{
-            e.target.button.innerHTML="Sending.....";
-            let d=new FormData(form);
-            fetch(url,{
-                method:"POST",
-                body:d
-            }).then((res)=>res.text())
-            .then((finalRes)=>{
-                e.target.button.innerHTML="Sending Successful"
-                console.log(finalRes)
-                form.reset();
-        })
-            e.preventDefault();
-        })
-</script>
 </html>

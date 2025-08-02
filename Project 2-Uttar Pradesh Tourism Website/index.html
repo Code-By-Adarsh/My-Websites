@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UP Tourism</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navbar Section -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">UP Tourism</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Destinations</a></li>
+        <li><a href="#">Culture</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#" class="btn-book">Book Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+<section class="hero-section">
+  <video autoplay muted loop playsinline class="bg-video">
+    <source src="v.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <h1>Welcome to Uttar Pradesh</h1>
+    <p>Discover the land of heritage, spirituality & tradition.</p>
+    <a href="#contact" class="hero-btn">Plan Your Visit</a>
+  </div>
+</section>
+
+
+<!-- About Section -->
+<section class="about" id="about">
+  <div class="about-container">
+    <div class="about-text">
+      <h2>About Uttar Pradesh</h2>
+      <p>
+        Uttar Pradesh is a land where history lives in every monument, where spirituality flows through the Ganges, and where culture echoes through ancient cities like Varanasi, Agra, and Lucknow. From the majestic Taj Mahal to the sacred ghats of the Ganga, every part of UP tells a story of India's rich heritage.
+      </p>
+    </div>
+    
+    <div class="about-highlights">
+      <div class="highlight-card">
+        <h3>🕌 Heritage</h3>
+        <p>Explore Mughal architecture, ancient forts, and majestic temples.</p>
+      </div>
+      <div class="highlight-card">
+        <h3>🌊 Spirituality</h3>
+        <p>Witness the divine Ganga Aarti and sacred pilgrimage routes.</p>
+      </div>
+      <div class="highlight-card">
+        <h3>🎉 Festivals</h3>
+        <p>Experience vibrant festivals like Diwali, Holi, and Kumbh Mela.</p>
+      </div>
+      <div class="highlight-card">
+        <h3>🍲 Cuisine</h3>
+        <p>Indulge in world-famous Awadhi, Mughlai, and street food delights.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Featured Destinations Section -->
+<section class="destinations" id="destinations">
+  <div class="section-title">
+    <h2>Featured Destinations</h2>
+    <p>Explore the iconic places that define the soul of Uttar Pradesh</p>
+  </div>
+
+  <div class="destination-grid">
+    <div class="destination-card">
+      <img src="tajmahal.jpg" alt="Taj Mahal">
+      <h3>Taj Mahal, Agra</h3>
+      <p>One of the Seven Wonders of the World and symbol of eternal love.</p>
+    </div>
+
+    <div class="destination-card">
+      <img src="varanasi ghat.jpg" alt="Varanasi">
+      <h3>Varanasi Ghats</h3>
+      <p>Witness the sacred Ganga Aarti and spiritual vibes of Kashi.</p>
+    </div>
+
+    <div class="destination-card">
+      <img src="ayodhya.jpg" alt="Ayodhya">
+      <h3>Ayodhya</h3>
+      <p>The birthplace of Lord Ram and a center of devotion and heritage.</p>
+    </div>
+
+    <div class="destination-card">
+      <img src="lucknow.jpg" alt="Lucknow">
+      <h3>Lucknow</h3>
+      <p>City of Nawabs known for its heritage, food, and architecture.</p>
+    </div>
+  </div>
+</section>
+<!-- Cultural Heritage & Festivals Section -->
+<section class="culture" id="culture">
+  <div class="section-title">
+    <h2>Cultural Heritage & Festivals</h2>
+    <p>Immerse yourself in the vibrant traditions of Uttar Pradesh</p>
+  </div>
+
+  <div class="culture-grid">
+    <div class="culture-card">
+      <img src="kumbh.jpg" alt="Kumbh Mela">
+      <h3>Kumbh Mela</h3>
+      <p>The world's largest spiritual gathering on the banks of the Ganges.</p>
+    </div>
+
+    <div class="culture-card">
+      <img src="holi in banaras.jpg" alt="Holi Barsana">
+      <h3>Holi in Barsana</h3>
+      <p>Celebrate the festival of colors in the playful spirit of Radha & Krishna.</p>
+    </div>
+
+    <div class="culture-card">
+      <img src="diwali in ayodhya.jpg" alt="Diwali Ayodhya">
+      <h3>Diwali in Ayodhya</h3>
+      <p>Witness Ayodhya illuminated with millions of diyas on Deepotsav.</p>
+    </div>
+
+    <div class="culture-card">
+      <img src="kathak.jpg" alt="Kathak Dance">
+      <h3>Kathak Dance</h3>
+      <p>One of the eight classical dance forms of India, born in Uttar Pradesh.</p>
+    </div>
+  </div>
+</section>
+<!-- Booking Section -->
+<section class="booking" id="booking">
+  <div class="section-title">
+    <h2>Plan Your Trip</h2>
+    <p>Book your journey to the heart of Indian culture</p>
+  </div>
+
+  <form class="booking-form">
+    <div class="form-group">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required />
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" placeholder="Enter your email" required />
+    </div>
+
+    <div class="form-group">
+      <label for="destination">Select Destination</label>
+      <select id="destination" required>
+        <option value="">-- Choose --</option>
+        <option value="Agra">Agra (Taj Mahal)</option>
+        <option value="Varanasi">Varanasi</option>
+        <option value="Ayodhya">Ayodhya</option>
+        <option value="Lucknow">Lucknow</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="date">Travel Date</label>
+      <input type="date" id="date" required />
+    </div>
+
+    <div class="form-group full">
+      <label for="message">Special Requests</label>
+      <textarea id="message" rows="4" placeholder="Any additional info..."></textarea>
+    </div>
+
+    <button type="submit" class="book-btn">Book Now</button>
+  </form>
+</section>
+<!-- Gallery Section -->
+<section class="gallery" id="gallery">
+  <div class="section-title">
+    <h2>Photo Gallery</h2>
+    <p>See the beauty and culture of Uttar Pradesh through images</p>
+  </div>
+
+  <div class="gallery-grid">
+    <div class="gallery-item">
+      <img src="tajmahal.jpg" alt="Taj Mahal">
+    </div>
+    <div class="gallery-item">
+      <img src="varanasi ghat.jpg" alt="Varanasi Ghats">
+    </div>
+    <div class="gallery-item">
+      <img src="ayodhya ram mandir.jpg" alt="Ayodhya Ram Mandir">
+    </div>
+    <div class="gallery-item">
+      <img src="lucknow.jpg" alt="Lucknow Imambara">
+    </div>
+    <div class="gallery-item">
+      <img src="holi in banaras.jpg" alt="Barsana Holi">
+    </div>
+    <div class="gallery-item">
+      <img src="diwali in ayodhya.jpg" alt="Ayodhya Diwali">
+    </div>
+    <div class="gallery-item">
+      <img src="kumbh.jpg" alt="Kumbh Mela">
+    </div>
+    <div class="gallery-item">
+      <img src="ayodhya.jpg" alt="Ayodhya">
+    </div>
+  </div>
+</section>
+<!-- Reviews / Testimonials Section -->
+<section class="reviews" id="reviews">
+  <div class="section-title">
+    <h2>What Tourists Say</h2>
+    <p>Real experiences from visitors across the world</p>
+  </div>
+
+  <div class="reviews-grid">
+    <div class="review-card">
+      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User 1">
+      <h3>Aarushi Mehta</h3>
+      <p class="stars">★★★★★</p>
+      <p class="review-text">
+        My visit to Varanasi was unforgettable. The Ganga Aarti gave me goosebumps. The city is truly magical!
+      </p>
+    </div>
+
+    <div class="review-card">
+      <img src="https://randomuser.me/api/portraits/men/35.jpg" alt="User 2">
+      <h3>Daniel Cruz</h3>
+      <p class="stars">★★★★☆</p>
+      <p class="review-text">
+        The Taj Mahal is even more breathtaking in person. UP has so much heritage and beauty to offer.
+      </p>
+    </div>
+
+    <div class="review-card">
+      <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="User 3">
+      <h3>Radhika Sharma</h3>
+      <p class="stars">★★★★★</p>
+      <p class="review-text">
+        I loved the food and the people in Lucknow. Awadhi cuisine was a dream come true!
+      </p>
+    </div>
+  </div>
+</section>
+<section id="contact" class="contact-section">
+  <h2>Contact Us</h2>
+  <p>Have questions or need help planning your trip? Reach out to us.</p>
+  <form class="contact-form">
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>UP Tourism</h3>
+      <p>Explore the rich culture, heritage, and destinations of Uttar Pradesh. Plan your journey with us!</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Destinations</a></li>
+        <li><a href="#booking">Book Now</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact Info</h4>
+      <p>Email: info@uptourism.com</p>
+      <p>Phone: +91 12345 67890</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Uttar Pradesh Tourism. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
